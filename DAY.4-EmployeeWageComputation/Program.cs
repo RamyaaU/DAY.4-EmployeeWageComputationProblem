@@ -6,7 +6,12 @@ namespace DAY._4_EmployeeWageComputation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to employee wage compuataion!");
+            EmpWageBuilderObject dmart = new EmpWageBuilderObject("Dmart", 20, 2, 10);
+            EmpWageBuilderObject reliance = new EmpWageBuilderObject("Reliance", 10, 4, 20);
+            dmart.computeEmpWage();
+            Console.WriteLine(dmart.toString());
+            reliance.computeEmpWage();
+            Console.WriteLine(reliance.toString());
         }
     }
 }
